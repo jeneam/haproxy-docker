@@ -35,6 +35,10 @@ RUN apt-get update -yq && apt-get upgrade -yq && \
     useradd --shell /usr/sbin/nologin -u 1000 -o -c "" -g 1000 haproxy --home /haproxy-data && \
     /haproxy -vv
 
+ADD 429.http /var/local/
+ADD 503.http /var/local/
+ADD acl_restricted_network  /etc/haproxy/
+
 
 ADD docker_entrypoint.sh /
 

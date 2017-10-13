@@ -1,0 +1,17 @@
+HTTP/1.0 503 Service Unavailable
+Cache-Control: no-cache
+Connection: close
+Content-Type: text/html
+
+<html>
+  <head>
+    <title>503 -  Service Unavailable</title>
+  </head>
+  <body>
+     <h1>Your request was blocked.</h1>
+     The proxy you are using prefetches the whole webpage with a very high
+     rate per second. To prevent this DoS attack your request was blocked.
+     <br />
+     Please contact your IT Administrator.
+  </body>
+</html>
