@@ -5,6 +5,7 @@ CONFIG_FILE=./haproxy_backend_limit.cfg
 CONFIG_FILE=./haproxy_x_forwarded_for.cfg
 CONFIG_FILE=./haproxy_rate_hdr.cfg
 CONFIG_FILE=./haproxy_geoip.cfg
+CONFIG_FILE=./haproxy_rate_ip.cfg
 
 ABSDIR=$(dirname `readlink -f $0`)
 docker run -it --rm -v $ABSDIR/example:/haproxy-data \
